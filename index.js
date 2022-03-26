@@ -28,7 +28,7 @@ client.on('message', (msg) => {
                 eventID:channelID
                 }
             }).then(function (response) {
-                msg.channel.bulkDelete(50);
+                //msg.channel.bulkDelete(50);
                 msg.channel.send(response.data.entrylist,{split:true});
             });
         //},3000);
