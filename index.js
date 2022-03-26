@@ -20,7 +20,7 @@ client.on('message', (msg) => {
 
     if(command === 'entrylist'){
         msg.channel.send("**Loading list, please wait...**");
-        setTimeout(function(){
+        //setTimeout(function(){
             //msg.channel.send(channelID);
             axios.get('https://ergp.axlemotorsport.com/race/assets/functions/discordBot.php', {
                 params: {
@@ -31,7 +31,7 @@ client.on('message', (msg) => {
                 msg.channel.bulkDelete(50);
                 msg.channel.send(response.data.entrylist,{split:true});
             });
-        },3000);
+        //},3000);
     }  
 
     else if(command === 'checkin'){
