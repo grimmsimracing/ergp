@@ -31,6 +31,10 @@ client.on('message', (msg) => {
             console.log(error);
         }); 
     }
+    
+    else if(command === 'test'){
+        msg.channel.send("ok testing is fine");
+    }
 
     else if(command === 'checkin'){
         globalEventID = channelID
