@@ -128,6 +128,9 @@ client.on('message', (msg) => {
             msg.channel.send("!entrylist "+channelID);
         });
     }
+    else if(command === 'fahad'){
+            msg.channel.send("Hello Fahad");
+    }
   });
 
 client.login(process.env.BOT_TOKEN);
